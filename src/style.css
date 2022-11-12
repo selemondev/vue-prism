@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply bg-black
+    }
+}
+@layer components {
+    .token.attr-value {
+        @apply text-sky-300;
+    }
+
+    .token.punctuation,
+    .token.attr-equals {
+        @apply text-slate-500;
+    }
+
+    .token.attr-name {
+        @apply text-slate-300;
+    }
+
+    .token.tag {
+        @apply text-pink-400;
+    }
+}
